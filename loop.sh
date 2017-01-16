@@ -10,7 +10,7 @@ if (( $VAR > 5 )) ; then
 fi
 }
 function waitandclear {
-sleep .2;
+sleep .1;
 echo "[16A"
 setcolor
 }

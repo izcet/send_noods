@@ -2,8 +2,8 @@
 DIR=data
 FIL=sn00
 function randwait {
-VAR=$(( $RANDOM % 3 ))
-VAR=$(( $VAR - 1 ))
+VAR=$(( $RANDOM % 9 ))
+VAR=$(( $VAR + 1 ))
 sleep .0$VAR
 }
 VAL=0

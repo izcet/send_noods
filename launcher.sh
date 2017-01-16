@@ -7,9 +7,10 @@ BLU='\033[0;34m'
 PUR='\033[0;35m'
 NOC='\033[0m'
 function delay {
-sleep .35
+sleep .7
 }
 echo "$RED running $BLU$0\n"
+delay
 delay
 echo "$RED\c"
 delay
