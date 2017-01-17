@@ -9,19 +9,19 @@ NOC='\033[0m'
 function delay {
 sleep .7
 }
-echo "$RED running $BLU$0\n"
+echo "$RED Running $BLU$0\n"
 delay
 delay
 echo "$RED\c"
 delay
 for i in $( ls *.sh ); do
-	echo "\t$i"
+	echo "$i:"
 	echo "$GRE\c"
 	cat -v $i
 	delay
 	echo "$RED\n"
 done
-echo "\tgetting status report\n"
+echo "Getting status reports:\n"
 echo "$NOC\c"
 sh status.sh
 echo "$RED\c"

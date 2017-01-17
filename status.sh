@@ -1,12 +1,12 @@
 #!/bin/sh
 DIR=data
 FIL=sn00
+VAL=0
 function randwait {
 VAR=$(( $RANDOM % 9 ))
-VAR=$(( $VAR + 1 ))
+VAR=$(( $VAR * $(( $(( 15 - $VAL )) / 2 )) ))
 sleep .0$VAR
 }
-VAL=0
 while (( $VAL < 15 )) ; do
 
 	echo "Status #$(( $VAL + 1 )):\t\c"
